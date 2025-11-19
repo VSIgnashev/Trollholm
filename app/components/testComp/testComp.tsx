@@ -2,7 +2,7 @@
 
 import {useState} from "react";
 
-function testComp() {
+function TestComp() {
 
   const mapSize = {
     width: 2048,
@@ -62,10 +62,10 @@ function testComp() {
 
 
     return {
-      x1: (args.coordinates.x1 * scaleX).toFixed(2),
-      y1: (args.coordinates.y1 * scaleY).toFixed(2),
-      x2: (args.coordinates.x2 * scaleX).toFixed(2),
-      y2: (args.coordinates.y2 * scaleY).toFixed(2)
+      x1: Number((args.coordinates.x1 * scaleX).toFixed(2)),
+      y1: Number((args.coordinates.y1 * scaleY).toFixed(2)),
+      x2: Number((args.coordinates.x2 * scaleX).toFixed(2)),
+      y2: Number((args.coordinates.y2 * scaleY).toFixed(2))
     }
 
   }
@@ -116,7 +116,7 @@ function testComp() {
   }
 
 
-  return <>
+  return <div className=" flex justify-center h-screen items-center overflow-hidden">
 
     <DebugPanel/>
     <Desctiption/>
@@ -138,7 +138,7 @@ function testComp() {
 
       </map>
     </div>
-  </>;
+  </div>
 }
 
-export default testComp;
+export default TestComp;

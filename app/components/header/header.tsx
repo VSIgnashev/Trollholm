@@ -6,7 +6,11 @@ function Header() {
       <div className="h-full  p-2 border-r-2 border-solid border-blue-300 flex items-center justify-center ">First
         version
       </div>
-    </Link>
+    </Link><Link href={"/v2"}>
+    <div className="h-full  p-2 border-r-2 border-solid border-blue-300 flex items-center justify-center ">First
+      version 2
+    </div>
+  </Link>
 
   </header>;
 }
