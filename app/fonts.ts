@@ -6,6 +6,6 @@ export const mainSignFont = localFont({
 });
 
 export const secondarySignFont = localFont({
-  src: "../public/fonts/BlackChancery.TTF",
+  src: "../public/fonts/BlackChancery.ttf",
   variable: "--font-secondary-sign",
 });
