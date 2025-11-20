@@ -1,8 +1,10 @@
 import signs from "../data/signs";
 import SignText from "@/app/util/mixedFonts";
+import FontsDescription from "@/app/fontsTest/FontsDescription";
 
 function FontsTest() {
   return <div className={"flex gap-40 justify-center pt-20"}>
+    <FontsDescription/>
     <div className=""><h2 className={"font-bold text-[40px]"}>Default font</h2>
       <div className="pt-6">
         {signs.map((s, i) => {

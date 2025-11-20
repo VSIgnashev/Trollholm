@@ -61,7 +61,7 @@ function MapObserver() {
 
   return (
     <div
-      className="w-full relative h-full overflow-hidden border-solid border-4 border-cyan-700  "
+      className="w-full relative h-full overflow-hidden border-solid border-4 border-yellow-600  "
 
       ref={mapRef}
 
@@ -79,7 +79,7 @@ function MapObserver() {
              transformOrigin: "center center",
            }}>
         <Signs/>
-        <img src="mapNoSign.png"
+        <img alt="" src="mapNoSign.png"
              draggable={false}
              style={{width: 2048, minWidth: 2048, height: 1536, display: "block", objectFit: "cover"}}/>
 

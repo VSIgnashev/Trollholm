@@ -3,6 +3,7 @@
 import React, {useEffect, useRef, useState} from "react";
 import V2Description from "@/app/v2/V2Description";
 import MapObserver from "@/app/components/mapObserver/MapObserver";
+import V3Description from "@/app/v3/V3Description";
 
 function V3() {
 
@@ -76,10 +77,10 @@ function V3() {
   }
 
 
-  return <div className=" flex gap-4 flex-col justify-center h-screen items-center overflow-hidden">
+  return <div className=" flex gap-4 flex-col justify-center h-[89.5vh] items-center overflow-hidden">
     <h2 style={{fontFamily: "var(--font-main-sign)"}} className={"text-5xl"}>Version 3</h2>
-    <DebugPanel/>
-    <V2Description/>
+    {/*<DebugPanel/>*/}
+    <V3Description/>
 
     <MapObserver/>
   </div>;

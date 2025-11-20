@@ -1,10 +1,14 @@
 import React from "react";
 
+import signs from "@/app/data/signs";
+import Sign from "@/app/v3/signs/Sign";
+
 
 function Signs() {
   return (
     <>
-      <img alt={""} src={"testSign.png"} className={"absolute top-[588px] left-[1223px]"}/>
+      <Sign sign={signs[0]}/>
+
     </>
   )
 }
