@@ -122,7 +122,7 @@ function TestComp() {
     <Desctiption/>
 
     <div className="w-[800px] h-[800px] outline-solid outline-4 outline-cyan-700">
-      <img src="mainMapNoSigns.jpg" useMap="#image-map"/>
+      <img src="mainMapWSigns.jpg" useMap="#image-map"/>
 
       <map name="image-map">
         {actualCoords.map((c, i) => (

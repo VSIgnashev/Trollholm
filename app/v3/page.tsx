@@ -2,8 +2,9 @@
 
 import React, {useEffect, useRef, useState} from "react";
 import V2Description from "@/app/v2/V2Description";
+import MapObserver from "@/app/components/mapObserver/MapObserver";
 
-function V2() {
+function V3() {
 
   useEffect(() => {
     const el = mapRef.current;
@@ -76,38 +77,12 @@ function V2() {
 
 
   return <div className=" flex gap-4 flex-col justify-center h-screen items-center overflow-hidden">
-    <h2 className={"text-5xl"} style={{fontFamily: "var(--font-secondary-sign)"}}>Version 2</h2>
+    <h2 style={{fontFamily: "var(--font-main-sign)"}} className={"text-5xl"}>Version 3</h2>
     <DebugPanel/>
     <V2Description/>
 
-    <div
-      className="w-[800px] relative h-[800px] overflow-hidden outline-solid outline-4 outline-cyan-700  "
-
-      ref={mapRef}
-
-      onMouseDown={handleMouseDown}
-      onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUp}
-      onMouseLeave={handleMouseUp}
-    >
-      <div className=""
-           style={{
-             position: "absolute",
-             left: `calc(50% + ${offset.x}px)`,
-             top: `calc(50% + ${offset.y}px)`,
-             transform: `translate(-50%, -50%) scale(${scale})`,
-             transformOrigin: "center center",
-           }}>
-        <div className="absolute bg-cyan-500 w-10 h-10 rounded-4xl left-[200px] top-[200px]"></div>
-        <img src="mainMapWSigns.jpg"
-             draggable={false}
-             style={{width: 2048, minWidth: 2048, height: 1536, display: "block", objectFit: "cover"}}/>
-
-      </div>
-
-
-    </div>
+    <MapObserver/>
   </div>;
 }
 
-export default V2;
+export default V3;
