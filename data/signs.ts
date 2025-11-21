@@ -1,4 +1,4 @@
-import SignType from "../types/signType";
+import SignType from "../app/types/signType";
 
 const signs: SignType[] = [{
   name: "Myrkamor",

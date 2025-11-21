@@ -1,6 +1,6 @@
 import React from "react";
 
-import signs from "@/app/data/signs";
+import signs from "@/data/signs";
 import Sign from "@/app/v3/signs/Sign";
 
 

@@ -1,6 +1,6 @@
 "use client"
 import SignText from "@/app/util/mixedFonts";
-import signs from "@/app/data/signs";
+import signs from "@/data/signs";
 import React from "react";
 import SignType from "@/app/types/signType";
 

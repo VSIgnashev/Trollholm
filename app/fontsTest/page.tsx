@@ -1,4 +1,4 @@
-import signs from "../data/signs";
+import signs from "@/data/signs";
 import SignText from "@/app/util/mixedFonts";
 import FontsDescription from "@/app/fontsTest/FontsDescription";
 
